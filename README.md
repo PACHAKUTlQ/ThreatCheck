@@ -6,6 +6,7 @@ ThreatCheck is a tool to spot the exact position and details of malicious conten
 
 Takes a binary as input, splits it until it pinpoints that exact bytes that the target engine will flag on and prints them to the screen. This can be helpful in confirming AV scan results and furthering investigation when analyzing malware.
 <div id="original"></div>
+
 >  idea from [DefenderCheck](https://github.com/matterpreter/DefenderCheck) and [ThreatCheck](https://github.com/rasta-mouse/ThreatCheck)
 
 ## Installation
