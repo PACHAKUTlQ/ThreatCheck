@@ -2,7 +2,7 @@
 
 ![banner](./assets/banner.svg) 
 
-ThreatCheck is a tool to spot the exact position and details of malicious content in binary files using external AV scanners. **Different from the <a href="#original">two original projects</a>, all AV scanners are supported if appropriately configured.**
+ThreatCheck is a malware-analysis tool to identify the exact position and details of malicious content in binary files using external AV scanners. **Different from the <a href="#original">two original projects</a>, all AV scanners are supported if appropriately configured.**
 
 Takes a binary as input, splits it until it pinpoints that exact bytes that the target engine will flag on and prints them to the screen. This can be helpful in confirming AV scan results and furthering investigation when analyzing malware.
 <div id="original"></div>
