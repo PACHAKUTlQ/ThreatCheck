@@ -2,7 +2,7 @@
 
 ![banner](./assets/banner.svg) 
 
-ThreatCheck is a malware-analysis tool to identify the exact position and details of malicious content in binary files using external AV scanners. **Different from the <a href="#original">two original projects</a>, all AV scanners are supported if appropriately configured.**
+ThreatCheck is a malware-analysis tool that identify the exact position and details of malicious content in binary files using external Anti-Virus scanners. **Different from the <a href="#original">two original projects</a>, all AV scanners are supported if appropriately configured.**
 
 Takes a binary as input, splits it until it pinpoints that exact bytes that the target engine will flag on and prints them to the screen. This can be helpful in confirming AV scan results and furthering investigation when analyzing malware.
 <div id="original"></div>
@@ -11,7 +11,9 @@ Takes a binary as input, splits it until it pinpoints that exact bytes that the 
 
 ## Installation
 
-Run `go build` under the root directory of the project.
+-  Run `go build` under the root directory of the project.
+
+-  Or directly run the compiled binaries in [Releases](https://github.com/PACHAKUTlQ/ThreatCheck/releases).
 
 
 
@@ -46,7 +48,7 @@ scanners:
 ```console
 $ ./ThreatCheck -f D:/fakepath/mimikatz.sfx.exe
 ```
-```text
+```c++
   *   )      )                          )     (        )                   )
     )  /(   ( /(   (       (       )   ( /(     )\    ( /(     (          ( /(
    ( )(_))  )\())  )(     ))\   ( /(   )\())  (((_)   )\())   ))\    (    )\())
@@ -67,8 +69,7 @@ D:/fakepath/mimikatz.sfx.exe > WINRARSFX > mimikatz.exe
 ...
 
 Details:
-```
-```htaccess
+
 0004fb99  31 1c  31 20  31 24  31 28  31 2c  31 30  31 34  31 38  1·1 1$1(1,101418
 0004fba9  31 3c  31 40  31 44  31 48  31 4c  31 50  31 54  31 58  1<1@1D1H1L1P1T1X
 0004fbb9  31 5c  31 60  31 64  31 68  31 6c  31 70  31 74  31 78  1\1`1d1h1l1p1t1x
@@ -85,8 +86,7 @@ Details:
 0004fc69  91 60  bc 91  82 b7  64 b8  17 09  70 22  c1 08  a0 a4  ·`····d···p"····
 0004fc79  50 46  3d 38  c6 17  02 08  2a 0d  82 96  ed bc  5c c4  PF=8····*·····\·
 0004fc89  ce 61  9c e6  66 71  c7 3a  5e 67  1c c5  73 1e  80 17  ·a··fq·:^g··s···
-```
-```c++
+
 Malicious content detected at: 0004fc19 (326681 bytes)
 ```
 
