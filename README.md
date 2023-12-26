@@ -48,7 +48,7 @@ scanners:
 ```console
 $ ./ThreatCheck -f D:/fakepath/mimikatz.sfx.exe
 ```
-```c++
+```plaintext
   *   )      )                          )     (        )                   )
     )  /(   ( /(   (       (       )   ( /(     )\    ( /(     (          ( /(
    ( )(_))  )\())  )(     ))\   ( /(   )\())  (((_)   )\())   ))\    (    )\())
