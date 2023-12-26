@@ -43,7 +43,7 @@ scanners:
 
 
 
-## Example
+## Demo
 
 ```console
 $ ./ThreatCheck -f D:/fakepath/mimikatz.sfx.exe
@@ -90,7 +90,7 @@ Details:
 Malicious content detected at: 0004fc19 (326681 bytes)
 ```
 
-
+<img src="./assets/demo.gif" alt="demo" style="zoom:30%;" />
 
 ## Warning
 
